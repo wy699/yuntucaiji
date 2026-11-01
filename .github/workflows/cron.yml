@@ -1,8 +1,12 @@
 name: fetch-cloud-images
+
 on:
   schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   fetch:
